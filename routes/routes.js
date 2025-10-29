@@ -11,7 +11,7 @@ const router = express.Router();
 // When the user visits "/", render the index.ejs template
 // with no forecast data yet (just a blank form).
 router.get('/', (req, res) => {
-  res.render('index', { forecast, error: null, city });
+  res.render('index', { forecast: null, error: null, city: null });
 });
 
 // --------------------
